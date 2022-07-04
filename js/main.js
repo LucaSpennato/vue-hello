@@ -27,6 +27,8 @@ const app = new Vue(
 
                 if((this.userInputSent !== '') && (this.contentSaved !== '') && (this.imageSrc !== '')){
                     this.title = 'Card compilata con successo!';
+                } else{
+                    this.title = 'Manca ancora qualcosa!';
                 }
             }
 
