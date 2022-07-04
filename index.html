@@ -20,10 +20,10 @@
 
                     <h1>{{title}}</h1>
                     <div class="card" style="width: 18rem;">
-                        <img :src="imageSrc" class="card-img-top" alt="...">
+                        <img :src="imageSrc" class="card-img-top" alt="card-image">
                         <div class="card-body">
                             <h5 class="card-title">{{ heading }}</h5>
-                            <p class="card-text" :class="content">{{ contentSaved }}</p>
+                            <p class="card-text">{{ contentSaved }}</p>
                             <div class="input-field text-center my-5 d-grid gap-3">
                                 <input type="text" v-model="userInput" placeholder="Inserisci il tuo nome">
                                 <input type="text" v-model="content" placeholder="Inserisci una descrizione">

@@ -8,7 +8,7 @@ const app = new Vue(
             userInputSent: '',
             content: '',
             image: '',
-            imageSrc: '',
+            imageSrc: 'https://www.focus.it/images/2021/11/23/mare_1020x680.jpg',
             contentSaved: '',
         },
 
