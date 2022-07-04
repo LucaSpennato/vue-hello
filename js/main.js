@@ -2,8 +2,8 @@ const app = new Vue(
     {
         el: '#root',
         data: {
-            title: 'Compila la tua card!',
-            heading: 'Henlo ',
+            title: 'Card compilotron 3000',
+            heading: '',
             userInput: '',
             userInputSent: '',
             content: '',
@@ -26,9 +26,13 @@ const app = new Vue(
                 this.image = '';
 
                 if((this.userInputSent !== '') && (this.contentSaved !== '') && (this.imageSrc !== '')){
-                    this.title = 'Card compilata con successo!';
+                    this.heading = `Henlo ${this.userInputSent}!!`;
+                    this.title = `Ciao ${this.userInputSent}, ecco la tua card!`;
                 } else{
-                    this.title = 'Manca ancora qualcosa!';
+                    this.title = 'Non hai inserito tutti i dati :/';
+                    this.userInputSent = '';
+                    this.contentSaved = '';
+                    this.imageSrc = '';
                 }
             }
 
